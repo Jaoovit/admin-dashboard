@@ -27,6 +27,27 @@ html, body {
     grid-column-end: 5;
 }
 
+.search {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+input[type="search"] {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.share {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.myname {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
 .main-content {
     display: grid;
     grid-row: 2 / 6;
