@@ -20,6 +20,83 @@ html, body {
     display: grid;
     grid-row-start: 1;
     grid-row-end: 6;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.fisrtlist > p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.secondlist > p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+p > svg {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/*
+li {
+    list-style: none;
+    padding: 10px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+.profile {
+    background-image: url(/img/account-box-outline.svg);
+}
+
+.messages {
+    background-image: url(/img/message-reply.svg);
+}
+
+.history {
+    background-image: url(/img/clock-time-four.svg);
+}
+
+.tasks {
+    background-image: url(/img/file-multiple.svg);
+}
+
+.communities {
+    background-image: url(/img/account-group.svg);
+}
+
+.settings {
+    background-image: url(/img/cog.svg);
+}
+
+.support {
+    background-image: url(img/help-box.svg);
+}
+
+.privacy {
+    background-image: url(img/shield-check.svg);
+}
+
+*/
+
+.fisrtlist {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.secondlist {
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
 
 .header {
@@ -42,7 +119,7 @@ html, body {
     place-self: center;
 }
 
-.search > a {
+a {
     color: rgb(49, 49, 49);
     text-decoration: none;
     grid-column-start: 7;
