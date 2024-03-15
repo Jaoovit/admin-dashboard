@@ -24,6 +24,7 @@ html, body {
 
 .header {
     display: grid;
+    margin-top: 15px;
     grid-column-start: 2;
     grid-column-end: 5;
 }
@@ -33,15 +34,51 @@ html, body {
     grid-template-columns: repeat(7, 1fr);
 }
 
+.search > button {
+    border: none;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    place-self: center;
+}
+
+.search > a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    place-self: center;
+}
+
+.search > img {
+    border-radius: 50px;
+    place-self: center;
+}
+
 input[type="search"] {
+    border-radius: 15px;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    place-self: center;
+    width: 100%;
 }
 
 .share {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.share > img {
+    border-radius: 50px;
+    place-self: center;
+}
+
+.share > button {
+    border-radius: 50px;
+    place-self: center;
+    padding: 10px;
+    width: 80%;
 }
 
 .myname {
