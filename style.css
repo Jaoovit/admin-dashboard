@@ -64,16 +64,28 @@ p > svg {
 }
 
 .search {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.search > button {
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bell {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.search > div > button {
     border: none;
     background-color: white;
     width: 35px;
     height: 35px;
-    place-self: center;
 }
 
 a {
@@ -84,35 +96,44 @@ a {
     place-self: center;
 }
 
-.search > img {
+.search > div > img {
     border-radius: 50px;
     place-self: center;
 }
 
 input[type="search"] {
     border-radius: 15px;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    place-self: center;
-    width: 100%;
+    width: 60vh;
 }
 
 .share {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.share > img {
+.profile {
+    display: flex;
+    align-items: center;
+    gap:35px;
+}
+
+.navbutton {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.share > div > img {
     border-radius: 50px;
     place-self: center;
 }
 
-.share > button {
+.share > div > button {
     border-radius: 50px;
     place-self: center;
     padding: 10px;
-    width: 80%;
+    width: 20vh;
 }
 
 .myname {
