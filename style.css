@@ -187,6 +187,9 @@ input[type="search"] {
 }
 
 .label-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border: solid 1px whitesmoke;
     border-radius: 15px;
@@ -205,11 +208,16 @@ input[type="search"] {
     
 }
 
-.label-project > button {
+.label-project > div > button {
     border: none;
     background-color: white;
     width: 35px;
     height: 35px;
+}
+
+.button-area {
+    display: flex;
+    justify-content: end;
 }
 
 .announcements {
